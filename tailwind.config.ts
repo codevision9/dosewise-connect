@@ -26,7 +26,9 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					soft: 'hsl(var(--primary-soft))',
+					muted: 'hsl(var(--primary-muted))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -34,7 +36,18 @@ export default {
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
+					foreground: 'hsl(var(--destructive-foreground))',
+					soft: 'hsl(var(--destructive-soft))'
+				},
+				success: {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))',
+					soft: 'hsl(var(--success-soft))'
+				},
+				warning: {
+					DEFAULT: 'hsl(var(--warning))',
+					foreground: 'hsl(var(--warning-foreground))',
+					soft: 'hsl(var(--warning-soft))'
 				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
@@ -67,6 +80,30 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'card': 'var(--shadow-card)',
+				'modal': 'var(--shadow-modal)'
+			},
+			fontFamily: {
+				'sans': ['Inter', 'SF Pro Display', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'sans-serif']
+			},
+			fontSize: {
+				'sm': 'var(--text-sm)',
+				'base': 'var(--text-base)',
+				'lg': 'var(--text-lg)',
+				'xl': 'var(--text-xl)',
+				'2xl': 'var(--text-2xl)',
+				'3xl': 'var(--text-3xl)'
+			},
+			spacing: {
+				'xs': 'var(--space-xs)',
+				'sm': 'var(--space-sm)',
+				'md': 'var(--space-md)',
+				'lg': 'var(--space-lg)',
+				'xl': 'var(--space-xl)',
+				'2xl': 'var(--space-2xl)'
 			},
 			keyframes: {
 				'accordion-down': {
